@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-standard{
+  @apply text-gray-600;
+}
+
+.icon-container{
+  @apply flex flex-col justify-center my-6 mx-auto items-center text-center max-w-xs;
+}
+
+.icon{
+  @apply w-16 py-2;
+}
+
+.btn{
+  @apply py-4 px-5 uppercase text-xs font-bold cursor-pointer tracking-wider border-solid border-green-900;
+}
+
+.btn-primary{
+  @apply inline-block mt-4 p-4 text-base font-bold border-2 border-solid border-white;
+}
+
+.btn-hover-primary{
+  @apply hover:bg-white hover:text-green-900;
+}

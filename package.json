@@ -1,0 +1,17 @@
+{
+  "name": "greenpatiolandscaping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.17"
+  }
+}
