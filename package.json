@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@themesberg/flowbite": "^1.1.1",
     "autoprefixer": "^10.3.7",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.17"
