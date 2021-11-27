@@ -11,8 +11,15 @@ module.exports = {
           100: '#E2E2D5',
           200: '#888883'
         },
-        bkgtan: '#F9D5B2' ,
-        red: '#FD5523'
+        bkgtan: '#FFE9BE' ,
+        red: '#FD5523',
+        basilGreen: '#356859',
+        green500: '#37966F',
+        green100: '#B9E4C9',
+        basilOrange: '#FD5523',
+        forestGreen: '#163217',
+        forest: '#448546',
+        yellow: '#F2F602'
       },
       screens: {
         'xs': '700px'
