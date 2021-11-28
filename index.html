@@ -12,36 +12,52 @@
   
 </head>
 <body class="">
-  <nav class="bg-bkgtan p-8 sticky top-0 z-50">
-    <div class="container mx-auto flex flex-wrap items-center justify-between">
-      <a href="#" class="flex">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap uppercase text-forestGreen">green patio landscaping</span>
-      </a>
-      <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
-        <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
-          <li>
-            <a href="#services" 
-               class="text-gray-700 hover:bg-green-50 border-b border-gray-100 block pl-3 pr-4 py-2">Services</a>
-          </li>
-          <li>
-            <a href="#about" 
-               class="text-gray-700 hover:bg-green-50 border-b border-gray-100 block pl-3 pr-4 py-2">About</a>
-          </li>
-          <li>
-            <a href="#contact" 
-               class="text-gray-700 hover:bg-green-50 border-b border-gray-100 block pl-3 pr-4 py-2">Contact</a>
-          </li>
-        </ul>
+  <!-- Navigation -->
+  <nav class="bg-white py-2 px-1">
+    <div class="flex justify-between">
+      <div>
+        <span>Green Patio Landscaping</span>
       </div>
+      <!-- Primary Navbar items -->
+      <div class="hidden md:flex items-center space-x-1">
+        <a href="#services" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+        <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+        <a href="#testimonials" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Testimonials</a>
+        <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+      </div>
+      <!-- End of Primary Navbar items -->
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-green-500"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- End of Mobile menu button -->
     </div>
   </nav>
+  <!-- mobile menu -->
+  <div class="hidden mobile-menu">
+    <ul class="">
+      <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+      <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+      <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+      <li><a href="#testimonials" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Testimonials</a></li>
+      <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact </a></li>
+    </ul>
+  </div>
+<!-- End of Navigation-->
+<!-- Hero section -->
   <section class="md:grid grid-cols-2 text-bkgtan">
-    <div class="w-full bg-forestGreen p-10 bg-no-repeat bg-right-bottom overflow-hidden"> 
+    <div class="w-full bg-forestGreen py-10 px-5 bg-no-repeat bg-right-bottom overflow-hidden"> 
       <!-- style="background-image: url('./img/Agave_bkg.svg');" -->
       <h2 class="font-bold text-4xl font-serif text-yellow mb-3">Hello, we are Green Patio Landscaping</h2>
       <p>You might say we're obessed with how we care for the quality of landcapes. We take pride in every landscape as if it was our own.</p> 
@@ -57,7 +73,7 @@
   </section>
 <!-- end of hero section -->
 <!-- services section-->
-<section class="bg-repeat bg-fixed" style="background-image: url(./public/img/background/wavey-fingerprint.svg);">
+<section class="bg-repeat bg-fixed" style="background-image: url(./public/img/background/wavey-fingerprint.svg);" id="services">
   <div class="w-full h-2 bg-repeat" style="background-image: url(./public/img/background/wavey-fingerprint-yellow.svg);"></div>
   <div class="bg-forestGreen w-full h-24 flex justify-center items-center content-center text-center bg-contain">
     <h2 class="font-bold text-center text-4xl text-yellow">
@@ -65,7 +81,7 @@
     </h2>
   </div>
   <!-- containre cards-->
-  <div class="p-4 flex flex-col justify-center items-center sm:grid md:grid-cols-2">
+  <div class="py-4 flex flex-col justify-center items-center sm:grid md:grid-cols-2">
 
     <div class="m-2 max-w-sm card bg-forestGreen text-bkgtan sm:max-w-md">
       <div class="p-5 flex items-center">
@@ -119,55 +135,17 @@
       </div>
     </div>
   </div>
-  <!-- end containre cards-->
 </section>
-  <!-- <section class="flex flex-col justify-center content-center bg-green-100 text-green-900"  id="services">
-    <div class="bg-green-900 w-full h-24 flex justify-center items-center text-center bg-contain">
-      <h2 class="font-bold text-center text-4xl text-white">
-        Our Services
-      </h2>
-    </div>
-    <div class="flex flex-col justify-center content-center md:grid grid-cols-2 py-8">
-      <div class="icon-container">
-        <div class="w-full h-1 bg-green-900 mb-4"></div>
-        <img class='icon' src="./public/img/lawn_icon-02.svg" alt="lawn care">
-        <p class="font-bold text-3xl">Lawn &amp; Garden Care</p>
-        <p>Lawn care, tree trimming, tree and shrub pruning and weed control</p>
-      </div>
-      <div class="icon-container">
-        <div class="w-full h-1 bg-green-900 mb-4"></div>
-        <img class='icon' src="./public/img/lawn_icon-01.svg" alt="irrigation">
-        <p class="font-bold text-3xl">Irrigation Services</p>
-        <p>New Irrigation system install, Irrigation repairs and upkeep, and water audits</p>
-      </div>
-      <div class="icon-container">
-        <div class="w-full h-1 bg-green-900 mb-4"></div>
-        <img class='icon' src="./public/img/lawn_icon-03.svg" alt="brick">
-        <p class="font-bold text-3xl">Landscape Masonry</p>
-        <p>Flagstone, brick, concrete, and rock decoration</p>
-      </div>
-      <div class="icon-container">
-        <div class="w-full h-1 bg-green-900 mb-4"></div>
-        <img class='icon' src="./public/img/lawn_icon-04.svg" alt="maintenance">
-        <p class="font-bold text-3xl">Maintenance</p>
-        <p>Routine Maintenance, Site clean-ups, trash hauling, and annual plantings</p>
-      </div>
-
-    </div>
- 
-  </section> -->
 <!-- end of services section -->
 <!-- about section--> 
   <section class="flex flex-col-reverse justify-center content-center border-yellow border-t-8 text-yellow bg-forestGreen md:grid grid-cols-2" id="about">
     <img class="w-full h-80 object-cover md:w-full md:h-screen" src="./public/img/esgar-profile.jpg" alt="">
-    <div class="flex flex-col justify-center text-center content-center p-16 md:px-14">
+    <div class="flex flex-col text-center items-center py-16 px-6 md:px-14">
       <p class="font-bold uppercase">green patio landscaping</p>
-			<h2 class="font-bold text-4xl font-serif text-yellow pb-3">We serve our friends and family</h2>
-			<p class="mb-8 text-bkgtan">Our company specializes in landscaping and not every home is designed 
-				the same so our landscaping services will always be tailored to meet your 
-				specific needs. We take pride in our work and we love building long 
-				lasting relationships with our customers.</p>
-				<a href="#contact" class="btn-primary mr-8 hover:bg-white hover:text-green-900 transition duration-700 ease-in-out">Book free consultation</a>
+			<h2 class="font-bold text-4xl font-serif text-yellow pb-3">We serve our friends and our community</h2>
+			<p class="mb-8 text-bkgtan">
+        Our company specializes in landscaping and not every home is designed the same so our landscaping services will always be tailored to meet your specific needs. We take pride in our work and we love building long lasting relationships with our customers.</p>
+				<a href="#contact" class="btn-primary hover:bg-white hover:text-green-900 transition duration-700 ease-in-out">Book free consultation</a>
     </div>
   </section>
 <!-- end of about section-->
@@ -193,13 +171,7 @@
   </section>
 <!-- end of review section--> 
 <!-- contact section--> 
-<!-- <section class="grid grid-cols-1 w-screen md:grid-cols-2 text-green-50" id="contact">
-  <a class="bg-green-400 p-20 uppercase text-2xl text-center hover:bg-green-600" href="tel:415.244.5326">call directly</a>
-  <a class="bg-green-700 p-20 uppercase text-2xl text-center hover:bg-green-900" href="mailto:jpgraziani@gmail.com">e-mail our team</a>
-</section> -->
-<!-- end of contact section--> 
-
-<section class="w-full bg-forestGreen p-16">
+<section class="w-full bg-forestGreen py-16 px-6" id="contact">
   <form class="flex flex-col" action="https://formspree.io/f/xlezrbbj" method="POST">
 
     <label class="uppercase text-white text-xl mb-1" for="_replyto">Your email</label>
@@ -207,13 +179,12 @@
  
       <label class="mt-8 uppercase text-white text-xl mb-1" for="message">Your message</label>
       <textarea class="bg-forest border-0 border-b-4 border-yellow placeholder-white focus:placeholder-white focus:text-white" placeholder="How can we help?" name="message" rows="6" required></textarea>
-   
-    
-    
+
     <!-- your other form fields go here -->
     <button class="btn-primary" type="submit">Send</button>
   </form>
 </section>
+<!-- end of contact section--> 
 
 <!-- footer section--> 
 <footer 
